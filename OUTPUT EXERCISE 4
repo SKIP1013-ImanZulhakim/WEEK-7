@@ -1,0 +1,10 @@
+Welcome!!!,This system test your Guessing skill.
+
+Enter number between 1 and 10 : 
+2
+Your number is too low!
+
+Enter number between 1 and 10 : 
+4
+Correct!! Your number is same!!  
+You guess 2 times.
