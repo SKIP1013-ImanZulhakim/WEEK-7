@@ -1,0 +1,32 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// Generate a random number to be guessed
+		Scanner sc= new Scanner (System.in);
+	    int number = (int)(Math.random() * 11), num, c=1;
+	    
+	    System.out.println("Welcome!!!,This system test your Guessing skill.");
+	    System.out.println();
+	    System.out.println("Enter number between 1 and 10 : ");
+	    num = sc.nextInt();
+	    
+	    while(number!=num) {
+	    	if (number>num)
+	    		System.out.println("Your number is too low!");
+	    	if (num>number)
+	    		System.out.println("Your number too high!");
+	    	
+	    	System.out.println("\nEnter number between 1 and 10 : ");
+	    	
+	 	    	num = sc.nextInt();
+	 	    
+	 	    c++;
+	    }
+	    
+	    System.out.println("Correct!! Your number is same!! "+" \nYou guess " +c+ " times.");
+	   
+	}
+
+}
