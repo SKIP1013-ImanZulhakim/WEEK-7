@@ -1,0 +1,36 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise6 {
+
+	public static void main(String[] args) {
+		/* declare satu passwd
+		guna scanner, mintak client masukkan pswd
+		sistem akan semak pswd		
+		Jika betul, keluar dari loop		
+		jika pswd salah, masukkan sekali lagi pswd	
+		kali ketiga, keluar dari loop dan bagi mesej, kad is invalid
+		Scanner sc = new Scanner(System.in);
+		*/
+		 Scanner input = new Scanner(System.in);
+	     
+		 int pin, pass , i = 1  ;
+	     
+		 System.out.println ("Please enter your PIN number : ");
+	     pin = input.nextInt();
+	     pass = 12345;
+	        
+	     if (pin == pass ) {
+	        System.out.println ("Access granted ");
+	        }
+	     else {
+	           
+	    	for ( i = 1 ; i<= 3 ; i++) {
+	             System.out.println ("Please enter your PIN number : ");
+	             pin = input.nextInt();
+	            }
+	    	
+	    System.out.println ("Invalid Card ");
+		}
+	
+	}
+}
